@@ -2,134 +2,77 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <title>كل سنة وانتِ الحياة ❤️</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إلى دينا في يوم ميلادها 🎂❤️</title>
     <style>
+        * {
+            box-sizing: border-box;
+        }
         body {
             font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #ffe4ec, #ffd6e8);
+            background-color: #fcefee;
             color: #333;
             text-align: center;
-            padding: 30px;
-            overflow: hidden;
+            margin: 0;
+            padding: 20px;
         }
         .card {
             background: #fff;
-            border-radius: 20px;
-            padding: 25px;
-            max-width: 650px;
+            border-radius: 15px;
+            padding: 20px;
+            max-width: 95%;
             margin: auto;
-            box-shadow: 0 0 20px rgba(255, 105, 180, 0.3);
-            position: relative;
-            z-index: 2;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
         }
         img {
             width: 100%;
+            max-height: 450px;
+            object-fit: cover;
             border-radius: 15px;
             margin-bottom: 20px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.2);
-        }
-        h2 {
-            font-size: 28px;
-            color: #d63384;
-            animation: pulse 2s infinite;
-        }
-        @keyframes pulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.05); }
         }
         p {
             white-space: pre-wrap;
-            font-size: 18px;
+            font-size: 17px;
             line-height: 1.7;
+        }
+        iframe {
+            width: 100%;
+            height: 250px;
+            border-radius: 15px;
+            margin-top: 20px;
         }
         audio {
             margin-top: 20px;
+            width: 100%;
         }
-        /* تأثير القلوب */
         .heart {
-            position: absolute;
+            position: fixed;
             width: 20px;
             height: 20px;
-            background: red;
-            transform: rotate(45deg);
-            animation: float 6s linear infinite;
-            opacity: 0.6;
-        }
-        .heart::before, .heart::after {
-            content: '';
-            position: absolute;
-            width: 20px;
-            height: 20px;
-            background: red;
+            background-color: pink;
             border-radius: 50%;
+            opacity: 0.6;
+            animation: float 5s linear infinite;
+            top: -20px;
         }
-        .heart::before {
-            top: -10px;
-            left: 0;
-        }
-        .heart::after {
-            left: -10px;
-            top: 0;
-        }
+
         @keyframes float {
             0% {
-                bottom: -20px;
-                opacity: 0.6;
+                transform: translateY(0) scale(1);
             }
             100% {
-                bottom: 100%;
-                left: calc(100% * var(--x));
-                opacity: 0;
+                transform: translateY(100vh) scale(0.5);
+            }
+        }
+
+        @media (max-width: 600px) {
+            p {
+                font-size: 15px;
             }
         }
     </style>
 </head>
 <body>
-    <!-- تأثير القلوب -->
-    <script>
-        for (let i = 0; i < 20; i++) {
-            let heart = document.createElement("div");
-            heart.className = "heart";
-            heart.style.left = Math.random() * 100 + "vw";
-            heart.style.animationDuration = (Math.random() * 3 + 3) + "s";
-            heart.style.setProperty('--x', Math.random());
-            document.body.appendChild(heart);
-        }
-    </script>
-
     <div class="card">
-        <img src="IMG_20231231_034358_536.jpg" alt="دينا">
-        <h2>كل سنة وانتِ الحياة ❤️</h2>
-        <p>
-ضيّ عيوني دينا،
-
-كل سنة وإنتِ بألف خير،
-كل سنة وإنتِ البهجة اللي تعمّر قلبي، والضحكة اللي نعيش عليها.
-
-يوم ميلادك مش يوم عادي،
-هو اليوم اللي الدنيا زادت فيه شخص، كان قدري، وراحتي، وحياتي.
-
-إنتِ النعمة اللي ربي رزقني بيها…
-واللي كلّ يوم نشكر على وجودها، حتى من بعيد، حتى فـ العناد، حتى فـ الزعل.
-
-نعرف إني ما كنتش قدّ اللحظة، وغلطت،
-بس الغلطة مش معنى إنها تقلل من اللي بينّا…
-ولا معنى إنّي نستهون بيك، لا يا دينا.
-
-اللي صار خلاني نشوف، إنك أغلى من أي وقت، وأهم من أي شي.
-
-نبيها بداية جديدة…
-نضحكوا، نعيشوا، ونحبوا بعض أكثر من قبل،
-بلا زعل، بلا وجع، بلا مسافة توقف بينا.
-
-نحبك دندوني ❤️
-        </p>
-
-        <!-- الصوت -->
-        <audio controls autoplay loop>
-            <source src="dina_song.mp3" type="audio/mpeg">
-            المتصفح لا يدعم الصوت.
-        </audio>
-    </div>
-</body>
-</html>
+        <img src="IMG_20231231
